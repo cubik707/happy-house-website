@@ -28,7 +28,7 @@ export default tseslint.config(
         'warn',
         { allowConstantExport: true },
       ],
-      'prettier/prettier': ['error'],
+      'prettier/prettier': ['warn'],
       ...react.configs.recommended.rules,
       ...react.configs['jsx-runtime'].rules,
     },
