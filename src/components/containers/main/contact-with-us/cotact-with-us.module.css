@@ -1,0 +1,20 @@
+.contactWithUs {
+  padding: 110px 0;
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  gap: 24px;
+  max-width: 521px;
+  width: 100%;
+  margin: 0 auto;
+
+  & > p {
+    text-align: center;
+  }
+}

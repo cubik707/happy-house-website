@@ -1,0 +1,12 @@
+.introduction {
+  padding: 60px 0;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+}
+
+.wrapper > img {
+  width: 100%;
+}

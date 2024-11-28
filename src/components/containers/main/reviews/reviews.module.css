@@ -1,0 +1,16 @@
+.reviewsSection {
+  background-color: #2b2a2a;
+  padding: 100px 0;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  gap: 64px;
+  align-items: center;
+}
+
+.reviewList {
+  display: flex;
+  gap: 55px;
+}

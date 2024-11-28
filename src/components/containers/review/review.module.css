@@ -1,0 +1,32 @@
+.card {
+  border-radius: 32px;
+  box-shadow:
+    4px 4px 12px 0 rgba(18, 16, 19, 0.05),
+    15px 15px 21px 0 rgba(18, 16, 19, 0.04),
+    33px 34px 28px 0 rgba(18, 16, 19, 0.03),
+    58px 60px 33px 0 rgba(18, 16, 19, 0.01),
+    91px 94px 37px 0 rgba(18, 16, 19, 0);
+  background-color: rgb(31, 31, 31);
+  padding: 30px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+.header {
+  display: flex;
+  gap: 24px;
+  align-items: center;
+  & > img {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    object-fit: cover;
+    background-size: cover;
+    background-position: center;
+  }
+  & > span {
+    font-size: 20px;
+    font-weight: 600;
+  }
+}
