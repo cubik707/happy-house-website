@@ -1,0 +1,18 @@
+.personInfo {
+  padding: 186px 0 84px 0;
+}
+
+.wrapper {
+  display: flex;
+  gap: 145px;
+  justify-content: center;
+  align-items: center;
+}
+
+.info {
+  display: flex;
+  flex-direction: column;
+  gap: 24px;
+  max-width: 480px;
+  width: 100%;
+}
