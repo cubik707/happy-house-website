@@ -5,7 +5,7 @@ import { reviewsData } from './reviews-data.ts';
 
 export const Reviews = () => {
   return (
-    <section className={styles.reviewsSection}>
+    <section id='reviews' className={styles.reviewsSection}>
       <div className='container'>
         <div className={styles.wrapper}>
           <Title>Отзывы</Title>

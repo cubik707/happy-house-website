@@ -4,7 +4,7 @@ import { Title } from '../../../core/title/title.tsx';
 
 export const WhyWeAreTeam = () => {
   return (
-    <section className={styles.whyWeAreTeam}>
+    <section id='why-we-are-team' className={styles.whyWeAreTeam}>
       <div className='container'>
         <div className={styles.wrapper}>
           <div>

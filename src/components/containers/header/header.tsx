@@ -1,10 +1,11 @@
 import styles from './header.module.css';
+import { Link } from 'react-scroll';
 
 const navItems = [
-  { text: 'Главная', href: '#' },
-  { text: 'Наша команда', href: '#' },
-  { text: 'Отзывы', href: '#' },
-  { text: 'Контакты', href: '#' },
+  { text: 'Главная', to: 'introduction' },
+  { text: 'Наша команда', to: 'members' },
+  { text: 'Отзывы', to: 'reviews' },
+  { text: 'Контакты', to: 'contact' },
 ];
 
 export const Header = () => {
@@ -17,9 +18,15 @@ export const Header = () => {
             <ul className={styles.navbar}>
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <a className={styles.navbarItem} href={item.href}>
+                  <Link
+                    className={styles.navbarItem}
+                    to={item.to}
+                    smooth={true}
+                    duration={500}
+                    offset={-70}
+                  >
                     {item.text}
-                  </a>
+                  </Link>
                 </li>
               ))}
             </ul>

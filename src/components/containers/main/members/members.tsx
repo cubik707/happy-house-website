@@ -6,7 +6,7 @@ import styles from './members.module.css';
 
 export const Members = () => {
   return (
-    <section className={styles.membersSection}>
+    <section id='members' className={styles.membersSection}>
       <div className={'container'}>
         <div className={styles.wrapper}>
           <Title>Выбери своего бойца</Title>

@@ -5,7 +5,7 @@ import mail from '../../../../assets/mail.png';
 
 export const CotactWithUs = () => {
   return (
-    <section className={styles.contactWithUs}>
+    <section id='contact' className={styles.contactWithUs}>
       <div className={'container'}>
         <div className={styles.wrapper}>
           <Title>Свяжитесь с нами</Title>
