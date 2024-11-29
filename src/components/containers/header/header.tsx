@@ -1,5 +1,5 @@
 import styles from './header.module.css';
-import { Link } from 'react-scroll';
+import { useNavigate } from 'react-router-dom';
 
 const navItems = [
   { text: 'Главная', to: 'introduction' },
@@ -9,6 +9,22 @@ const navItems = [
 ];
 
 export const Header = () => {
+  const navigate = useNavigate();
+
+  // Функция для навигации на главную страницу и прокрутки до нужного элемента
+  const handleNavigation = (to: string) => {
+    // Переходим на главную страницу
+    navigate('/', { replace: true });
+
+    // Прокручиваем к нужному элементу после перехода
+    setTimeout(() => {
+      const element = document.getElementById(to);
+      if (element) {
+        element.scrollIntoView({ behavior: 'smooth', block: 'start' });
+      }
+    }, 100); // Ожидаем немного, чтобы компонент успел отрендериться
+  };
+
   return (
     <header className={styles.header}>
       <div className='container'>
@@ -18,15 +34,12 @@ export const Header = () => {
             <ul className={styles.navbar}>
               {navItems.map((item, index) => (
                 <li key={index}>
-                  <Link
+                  <button
                     className={styles.navbarItem}
-                    to={item.to}
-                    smooth={true}
-                    duration={500}
-                    offset={-70}
+                    onClick={() => handleNavigation(item.to)}
                   >
                     {item.text}
-                  </Link>
+                  </button>
                 </li>
               ))}
             </ul>
