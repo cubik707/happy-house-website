@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.wrapper > img {
+  height: 520px;
+}
+
 .info {
   display: flex;
   flex-direction: column;
