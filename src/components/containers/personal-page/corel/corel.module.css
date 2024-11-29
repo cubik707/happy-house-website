@@ -1,19 +1,19 @@
 .presentation {
-    background-color: #2B2A2A;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 95px;
-    padding: 100px 0;
+  background-color: #2b2a2a;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 95px;
+  padding: 100px 0;
 
-    &>h2{
-        text-transform: uppercase;
-        font-size: 150px;
-        font-weight: 700;
-        line-height: 150px;
-        max-width: 550px;
-        width: 100%;
-        color: #3CFF2A;
-        cursor: default;
-    }
+  & > h2 {
+    text-transform: uppercase;
+    font-size: 150px;
+    font-weight: 700;
+    line-height: 150px;
+    max-width: 550px;
+    width: 100%;
+    color: #3cff2a;
+    cursor: default;
+  }
 }

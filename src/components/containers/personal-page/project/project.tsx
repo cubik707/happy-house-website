@@ -6,14 +6,14 @@ type Props = ProjectType & { isOdd: boolean }; // Добавляем проп is
 
 export const Project = ({ name, photo, description, isOdd }: Props) => {
   return (
-    <section
-      className={styles.projectInfo}
-    >
+    <section className={styles.projectInfo}>
       <div className={'container'}>
-        <div className={`${styles.wrapper} ${
-          isOdd ? styles.odd : styles.even // Применяем класс в зависимости от isOdd
-        }`}>
-          <img src={photo} alt="" />
+        <div
+          className={`${styles.wrapper} ${
+            isOdd ? styles.odd : styles.even // Применяем класс в зависимости от isOdd
+          }`}
+        >
+          <img src={photo} alt='' />
           <div className={styles.info}>
             <Title>{name}</Title>
             <p>{description}</p>
